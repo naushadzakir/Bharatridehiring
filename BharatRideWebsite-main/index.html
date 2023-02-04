@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a website using html and css in hindi</title>
+    <link rel="stylesheet" type="text/css" href="seo1.css">
+    <script src="https://kit.fontawesome.com/fd8b614daf.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fd8b614daf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/icon.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./image/logo.png" alt="BharatRide" class="logo" />
+        <span class="BharatRide">BharatRide</span>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="#">Home</a></li>
+                <li><a class="navbar-link" href="#">About</a></li>
+                <li><a class="navbar-link" href="#">Services</a></li>
+                <li><a class="navbar-link" href="#">Gallery</a></li>
+                <li>
+                    <a class="navbar-link" href="#" onclick="contactdetails()">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <h1>Be A Part Of Our Team <span>BharatRide.</span></h1>
+            <p>
+                We are so glad you want to join us in exploring a world of endless opportunities at BharatRide. Let’s
+                find a spot for you.
+            </p>
+            <br><br>
+
+            <div class="wrapper">
+                <div class="icon facebook">
+                    <div class="tooltip">
+                        Facebook
+                    </div>
+                    <span><i class="fab fa-facebook-f" onclick="facebook()"></i></span>
+                </div>
+                <div class="icon twitter">
+                    <div class="tooltip">
+                        Twitter
+                    </div>
+                    <span><i class="fab fa-twitter" onclick="twitter()"></i></span>
+                </div>
+                <div class="icon instagram">
+                    <div class="tooltip">
+                        Instagram
+                    </div>
+                    <span><i class="fa fa-instagram" onclick="instagram()"></i></i></span>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">
+                        Whatsapp
+                    </div>
+                    <span><i class="fa fa-whatsapp" onclick="whatsapp()"></i></span>
+                </div>
+                <div class="icon youtube">
+                    <div class="tooltip">
+                        Gmail
+                    </div>
+                    <span><i class="fa fa-envelope" onclick="gmail()"></i></span>
+                </div>
+            </div>
+
+            <a href="#" class="Heired" onclick="show()">Get Hired!</a>
+
+        </div>
+        <div class="right">
+            <img src="image/pic1.png">
+
+        </div>
+    </div>
+
+
+
+    <div class="form-css" id="form-css2">
+        <div class="form-css1" id="form-css1">
+            <div class="header1">
+                <i onclick="removeactive()" class="fa-sharp fa-solid fa-xmark"></i>
+                <h2>Hiring Form</h2>
+            </div>
+            <form action="" method="post" class="form" id="form">
+
+                <div class="form-control">
+
+                    <input type="text" name="name1" id="username" placeholder="Enter Your First Name">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email" autocomplete="off"
+                        require>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Department</label>
+                    <input type="text" name="department" id="department" placeholder="Enter Your Last Name"
+                        autocomplete="off" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Semester</label>
+                    <input type="number" name="semester" id="semester" placeholder="Enter Your Password"
+                        autocomplete="off" require>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Skills</label>
+                    <input type="text" name="skills" id="skills" placeholder="Skilss (Like Language)" autocomplete="off"
+                        required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Github Link</label>
+                    <input type="text" name="github" id="github" placeholder="Github Link" autocomplete="off" require>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Contact No</label>
+                    <input type="text" name="phoneno" id="contact" placeholder="Confirm Password" autocomplete="off"
+                        require>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Message</small>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="contact-container" id="contact-container">
+        <div class="contact1-form">
+            <div class="contact-info">
+                <h3 class="title">Reimagine at BharatRide</h3>
+                <p class="text">
+                    At BharatRide we’re reimagining the way the world moves for the better. 
+                    That means being bold in our decisions and building for something bigger. 
+                    For us, all of that starts with helping people go anywhere and get anything
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="image/pin.png" class="icon" alt="" />
+                        <p>90/3 Park Road, Patel Nager, Dehradun</p>
+                    </div>
+                    <div class="information">
+                        <img src="image/email.png" class="icon" alt="" />
+                        <p>admin@bharatride.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="image/phone.png" class="icon" alt="" />
+                        <p>+91 8445606325</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100089296910251" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/BharatRide" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bharatrideapp/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bharat-ride-073869261" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+                <i onclick="removeactive()" class="fa-sharp fa-solid fa-xmark" id="contact-crose"></i>
+                <form name="form" action="https://formspree.io/f/xyyazqkq" method="POST" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="Name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="Email" type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="Phone No." type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="Message" class="input"></textarea>
+                        <label name="message" for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./Js/index.js"></script>
+    <script src="./Js/contact.js"></script>
+    <script src="./Js/script.js"></script>
+
+</body>
+
+</html>
