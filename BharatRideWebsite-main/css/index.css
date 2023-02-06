@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+#mob{
+    display: none;
+}
 
 .logo {
     font-size: 2em;
@@ -184,4 +187,15 @@
     .right {
         flex-basis: 100%;
     }
+    
 }
+
+@media screen and (max-width: 600px) {
+   #mob{
+    display: inline;
+   }
+   #lap{
+    display: none;
+   }
+  }
+  

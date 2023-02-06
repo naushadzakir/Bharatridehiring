@@ -47,7 +47,10 @@
 
     <div class="container">
         <div class="left">
-            <h1>Be A Part Of Our Team <span>BharatRide.</span></h1>
+            <h1 id="lap">Be A Part Of Our Team <span>BharatRide.</span></h1>
+            <h1 id="mob">Be A Part Of <span>BharatRide.</span></h1>
+
+
             <p>
                 We are so glad you want to join us in exploring a world of endless opportunities at BharatRide. Let’s
                 find a spot for you.
@@ -87,7 +90,7 @@
                 </div>
             </div>
 
-            <a href="#" class="Heired" onclick="show()">Get Hired!</a>
+            <a href="#" class="Heired" onclick="show()">Join us!</a>
 
         </div>
         <div class="right">
@@ -108,7 +111,7 @@
 
                 <div class="form-control">
                     <label>Name</label>
-                    <input type="text" name="name1" id="username" placeholder="Enter Full Name">
+                    <input type="text" name="name1" id="username" placeholder="Enter Full Name" required>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error Message</small>
@@ -117,7 +120,7 @@
 
                 <div class="form-control">
                     <label>Email</label>
-                    <input type="text" name="email" id="email" placeholder="Enter Email" autocomplete="off"
+                    <input type="text" name="email" id="email" placeholder="Enter Your Email" autocomplete="off"
                         require>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
@@ -126,7 +129,7 @@
 
                 <div class="form-control">
                     <label>Department</label>
-                    <input type="text" name="department" id="department" placeholder="Enter Department"
+                    <input type="text" name="department" id="department" placeholder="e.g.Computer Science Engineering"
                         autocomplete="off" required>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
@@ -135,7 +138,7 @@
 
                 <div class="form-control">
                     <label>Semester</label>
-                    <input type="number" name="semester" id="semester" placeholder="Enter Semester"
+                    <input type="number" min="1" max="8" name="semester" id="semester" placeholder="Enter Your Current Semester"
                         autocomplete="off" require>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
@@ -144,7 +147,7 @@
 
                 <div class="form-control">
                     <label>Skills</label>
-                    <input type="text" name="skills" id="skills" placeholder="Enter Skills" autocomplete="off"
+                    <input type="text" name="skills" id="skills" placeholder="Skills(Languages,Framework)" autocomplete="off"
                         required>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
@@ -153,7 +156,7 @@
 
                 <div class="form-control">
                     <label>Github Link</label>
-                    <input type="text" name="github" id="github" placeholder="Enter Github Link" autocomplete="off" require>
+                    <input type="text" name="github" id="github" placeholder="Github Link" autocomplete="off">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error Message</small>
